@@ -14,12 +14,12 @@ $(".portfolio-title a").mouseover(function(){
 $(".portfolio-title a").mouseout(function(){
     $(".portfolio-title a").css("text-decoration-line", "none");
 });
-$(".contact-title a").mouseover(function(){
-    $(".contact-title a").css("text-decoration", "line-through");
-})
-$(".contact-title").mouseout(function(){
-    $(".contact-title a").css("text-decoration", "none");
-})
+// $(".contact-title a").mouseover(function(){
+//     $(".contact-title a").css("text-decoration", "line-through");
+// })
+// $(".contact-title").mouseout(function(){
+//     $(".contact-title a").css("text-decoration", "none");
+// })
 
 // DROPDOWN
 
