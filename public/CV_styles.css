@@ -40,9 +40,10 @@ div{
 
 header{
   display: grid;
+  gap: 20px;
   width: 100%;
-  grid-template-columns: 20% 50% 30% ;
-  grid-template-rows: auto;
+  grid-template-columns: 15% 65% 20% ;
+
   /* position: relative; */
 }
 
@@ -50,7 +51,7 @@ header{
   display: inline-flex;
   /* float: left; */
   justify-content: start;
-  width: 100%;
+  max-width: 100%;
   padding: 35px 0% 0px 0%;
 }
 
@@ -68,35 +69,35 @@ header{
   color: #000000;
 }
 
-.logo-contact-container{
+.contact-container{
   display: inline-flex;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   line-height: 22px;
   padding: 35px 0% 0px 0%;
 }
 
-.logo-contact{
+.contact-container-logos{
   display: flex;
- 
-
+  flex-wrap:wrap;
+  max-width: 100%;
   gap: 20px;
 }
 
-.logo-contact a img{
+.contact-container-logos a img{
   width: 25px;
-
 }
 
 .nav-container{
   display: flex;
   justify-content: end;
-  width: 100%;
+  max-width: 100%;
 
 }
 
 .nav-container-titles{
   display:flex;
+  flex-wrap: wrap;
   justify-content: end;
   padding: 35px 0 0 0;
   max-width: 100%;
@@ -143,7 +144,7 @@ nav .portfolio-title a{
   text-decoration: none;
 }
 
-/* nav .contact-title{
+nav .contact-title{
   display: inline-block;
   padding-left: 20px;
 }
@@ -156,7 +157,7 @@ nav .contact-title a{
   font-style: normal;
   font-weight: 300;
   text-decoration: none;
-} */
+}
 
 nav .dropDown{
   display: inline-block;
