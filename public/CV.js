@@ -4,21 +4,21 @@
 
 $(".cv-title a").mouseover(function(){
     $(".cv-title a").css("text-decoration-line", "line-through");
-})
+});
 $(".cv-title a").mouseout(function(){
     $(".cv-title a").css("text-decoration-line", "none");
-})
+});
 $(".portfolio-title a").mouseover(function(){
     $(".portfolio-title a").css("text-decoration-line", "line-through");
-})
+});
 $(".portfolio-title a").mouseout(function(){
     $(".portfolio-title a").css("text-decoration-line", "none");
-})
+});
 // $(".contact-title a").mouseover(function(){
 //     $(".contact-title a").css("text-decoration", "line-through");
 // })
 // $(".contact-title").mouseout(function(){
-//     $(".contact-title").css("text-decoration", "none");
+//     $(".contact-title a").css("text-decoration", "none");
 // })
 
 // DROPDOWN

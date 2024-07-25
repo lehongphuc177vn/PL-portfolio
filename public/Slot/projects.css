@@ -29,7 +29,7 @@ p{
 
 .site-container{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +78,7 @@ header{
   justify-content: center;
   max-width: 100%;
   line-height: 22px;
-  padding: 35px 0% 0px 0%;
+  padding: 35px 0px 0px 0px;
 }
 
 .contact-container-logos{
@@ -114,7 +114,7 @@ nav .cv-title{
   /* vertical-align: middle; */
 }
 
-nav .cv-title .active{
+nav .portfolio-title .active{
   color:#000000;
   font-style: normal;
   font-weight: 500;
@@ -213,77 +213,71 @@ nav .dropContent{
 
 /* MAIN */
 
-
 main{
   display: block;
   position: relative;
+}
+
+.site-main{
+  display: flex;
+  flex-direction: column;
 }
 
 section{
   display: block;
 }
 
-.work-experience{
-  margin: 25px 0 25px 0;
+.welcome-text{
+    margin:50px 0 50px 0;
+    max-width: 100%;
 }
-.site-main{
-  display: flex;
-  flex-direction: column;
+
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome .wc-title{
+  font-size: 3rem;
+  font-weight: 400;
+  margin:0;
   text-align: center;
-  font-size: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70%;
+  white-space: pre;
 }
 
-.site-main-ct{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.site-main-text{
-  margin: 25px 0 25px 0;
-  /* text-align: justify;
-  text-align-last: center; */
-  text-align: center;
-  font-size: 1.6rem;
-
-}
-
-.site-main .about{
-  margin-top: 50px;
-}
-
-h2{
-  margin: 0;
-  font-weight: 700;
-}
 
 .exp-grid{
   display: grid;
-  grid-template-columns: 1fr 0.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr 8fr;
   grid-template-rows: auto;
   grid-auto-rows: auto;
-  margin-top: 25px;
-  gap: 10px;
+  margin-top: 5px;
+  gap: 0px;
+  font-weight: 300;
+  font-size: 1.5rem;
+
 }
 
 .grid-left{
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: end;
   width: 100%;
   height: 100%;
 }
 
-.grid-left-year p{
-  font-size: 2rem;
-  margin: 0;
+.grid- span{
+  white-space: pre;
 }
 
-.grid-mid p{
-  margin: 5px 0 0 0;
+.grid-mid{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
 }
 
 .grid-right{
@@ -294,30 +288,186 @@ h2{
   height: 100%;
 }
 
-.grid-right-company p{
-  font-size: 2rem;
-  margin: 0;
-}
-.grid-right-title p{
-  font-size: 1.6rem;
-  margin: 0;
-  text-align: left;
+.grid-right span{
+  white-space: pre;
 }
 
-.education{
-  margin: 25px 0 25px 0;
+
+
+
+
+
+
+
+
+.sideBar-mainContent{
+  display:block;
+  max-width: 100%;
 }
-/* CONTACT */
-.contact{
-  margin: 25px 0 25px 0;
+
+.sideBar{
+  padding-right: 20px;
+  display: inline-block;
+  max-width: 20%;
+  float:left;
 }
+
+.sideBar .active-sideBar{
+  color:#000000;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sideBar-ct-title{
+  margin:0 0 30px 0;
+  padding:0;
+}
+
+.sideBar-text{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+
+
+
+.mainContent{
+  display: inline-block;
+  max-width: 80%;
+  float: right;
+}
+
+.project-images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.project-images img{
+  display: block;
+}
+
+
+#slotImg{
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: 0.1s;
+}
+
+#slotImg:hover {opacity: 0.8;}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+  
+    max-width: 80%;
+}
+
+#caption{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 2rem;
+}
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.1s;
+    animation-name: zoom;
+    animation-duration: 0.1s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 160px;
+    font-weight:lighter;
+    transition: 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.back-to-top{
+  display: flex;
+  justify-content: end;
+  padding: 50px 0 25px 0;
+}
+
+.arrow-backToTop{
+ 
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+}
+
+/* FOOTER */
+footer{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.footer-container{
+  padding: 50px 0 50px 0;
+}
+
+
 
 .footer-contact{
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-direction: column;
-  margin: 25px 0 50px 0;
 }
 
 .footer-contact-logo{
@@ -337,21 +487,19 @@ h2{
   margin: 0;
 }
 
-/* FOOTER */
 
-footer{
-  display: block;
-  position: relative;
+
+.text-bottom p{
+  margin-top: 50px;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
 }
 
-.back-to-top{
-  display: flex;
-  justify-content: end;
-  margin: 25px 0 100px 0;
-}
 
-.arrow-backToTop{
-  text-decoration: none;
-  font-size: 25px;
-}
+
+
+
+
+
 
