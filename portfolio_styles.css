@@ -209,10 +209,14 @@ nav .dropContent{
 
 /* MAIN */
 
-
 main{
   display: block;
   position: relative;
+}
+
+.site-main{
+  display: flex;
+  flex-direction: column;
 }
 
 section{
@@ -231,12 +235,13 @@ section{
 }
 
 .sideBar-mainContent{
-  display:inline-block;
+  display:block;
+  max-width: 100%;
 }
 
 .sideBar{
   padding-right: 20px;
-  display: block;
+  display: inline-block;
   max-width: 20%;
   float:left;
 }
@@ -262,9 +267,9 @@ section{
 }
 
 .mainContent{
-  display: block;
+  display: inline-block;
   max-width: 80%;
-  float:right;
+  float: right;
 }
 
 .project-covers-container{
@@ -329,13 +334,14 @@ section{
 .back-to-top{
   display: flex;
   justify-content: end;
-  padding-top: 50px;
-  /* padding-bottom: 50px; */
+  padding: 50px 0 25px 0;
 }
 
 .arrow-backToTop{
+ 
   text-decoration: none;
   font-size: 25px;
+  color: #000000;
 }
 
 /* FOOTER */
