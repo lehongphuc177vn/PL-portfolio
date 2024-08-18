@@ -21,7 +21,24 @@ $(".portfolio-title a").mouseout(function(){
 //     $(".contact-title a").css("text-decoration", "none");
 // })
 
-// DROPDOWN
+// DROPDOWN SIDEBAR
+
+// var sideBarDropDown = document.getElementsByClassName("sideBar-text");
+// var i;
+// for (i = 0; i < sideBarDropDown.length; i++){
+//     sideBarDropDown[i].addEventListener("mouseover").function() {
+//          this.classList.toggle("active");
+//         var sideBarDropDownContent = this.nextElementSibling;
+//         if(sideBarDropDownContent.style.display === "block"){
+//             sideBarDropDownContent.style.display = "none";
+//         } else {
+//             sideBarDropDownContent.style.display = "block";
+//         }  
+//     }
+
+// }
+
+// // DROPDOWN
 
 $(".dropBtn").mouseover(function(){
     $(".dropBtn").css("font-weight", "500");
@@ -43,53 +60,53 @@ $(".dropContent").mouseout(function(){
     $(".dropContent-textVi").css("text-decoration", "none");
 });
 
-// SIDEBAR
-$(".active-sideBar ").mouseover(function(){
-    $(".active-sideBar").css("font-weight", "500");
-    $(".active-sideBar").css("text-decoration", "line-through");
-});
-$(".active-sideBar").mouseout(function(){
-    $(".active-sideBar").css("font-weight", "500");
-    $(".active-sideBar").css("text-decoration", "none");
-});
+// // SIDEBAR
+// $(".active-sideBar ").mouseover(function(){
+//     $(".active-sideBar").css("font-weight", "500");
+//     $(".active-sideBar").css("text-decoration", "line-through");
+// });
+// $(".active-sideBar").mouseout(function(){
+//     $(".active-sideBar").css("font-weight", "500");
+//     $(".active-sideBar").css("text-decoration", "none");
+// });
 
-$(".slot").mouseover(function(){
-    $(".slot").css("font-weight", "500");
-    $(".slot").css("text-decoration", "line-through");
-});
-$(".slot").mouseout(function(){
-    $(".slot").css("font-weight", "300");
-    $(".slot").css("text-decoration", "none");
-});
+// $(".slot").mouseover(function(){
+//     $(".slot").css("font-weight", "500");
+//     $(".slot").css("text-decoration", "line-through");
+// });
+// $(".slot").mouseout(function(){
+//     $(".slot").css("font-weight", "300");
+//     $(".slot").css("text-decoration", "none");
+// });
     
 
-$(".mobile").mouseover(function(){
-    $(".mobile").css("font-weight", "500");
-    $(".mobile").css("text-decoration", "line-through");
-});
-$(".mobile").mouseout(function(){
-    $(".mobile").css("font-weight", "300");
-    $(".mobile").css("text-decoration", "none");
-});
+// $(".mobile").mouseover(function(){
+//     $(".mobile").css("font-weight", "500");
+//     $(".mobile").css("text-decoration", "line-through");
+// });
+// $(".mobile").mouseout(function(){
+//     $(".mobile").css("font-weight", "300");
+//     $(".mobile").css("text-decoration", "none");
+// });
 
-$(".personal").mouseover(function(){
-    $(".personal").css("font-weight", "500");
-    $(".personal").css("text-decoration", "line-through");
-});
-$(".personal").mouseout(function(){
-    $(".personal").css("font-weight", "300");
-    $(".personal").css("text-decoration", "none");
+// $(".personal").mouseover(function(){
+//     $(".personal").css("font-weight", "500");
+//     $(".personal").css("text-decoration", "line-through");
+// });
+// $(".personal").mouseout(function(){
+//     $(".personal").css("font-weight", "300");
+//     $(".personal").css("text-decoration", "none");
     
-});
+// });
 
-$(".else").mouseover(function(){
-    $(".else").css("font-weight", "500");
-    $(".else").css("text-decoration", "line-through");
-});
-$(".else").mouseout(function(){
-    $(".else").css("font-weight", "300");
-    $(".else").css("text-decoration", "none");
-});
+// $(".else").mouseover(function(){
+//     $(".else").css("font-weight", "500");
+//     $(".else").css("text-decoration", "line-through");
+// });
+// $(".else").mouseout(function(){
+//     $(".else").css("font-weight", "300");
+//     $(".else").css("text-decoration", "none");
+// });
 
 // BACKTOTOP
 
@@ -101,6 +118,27 @@ $(".backToTop").mouseout(function(){
     $(".backToTop").css("font-weight", "300");
     $(".backToTop").css("text-decoration", "none");
 });
+
+//RESPONSIVE MENU
+
+function myFunction(){
+    var popup = document.getElementById("text-Popup");
+    popup.classList.toggle("show");
+ 
+}
+
+var toggleBack = document.getElementById("nav-container-menu-icon");
+toggleBack.addEventListener("click", function(){
+    if(toggleBack.innerHTML === "≡"){
+        toggleBack.innerHTML = "⨉";
+    } else {
+        toggleBack.innerHTML = "≡"
+    }
+}
+);
+
+
+
 
 
 
