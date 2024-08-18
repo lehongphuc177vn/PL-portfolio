@@ -55,6 +55,23 @@ $(".backToTop").mouseout(function(){
     $(".backToTop").css("text-decoration", "none");
 });
 
+//RESPONSIVE MENU
+
+function myFunction(){
+    var popup = document.getElementById("text-Popup");
+    popup.classList.toggle("show");
+ 
+}
+
+var toggleBack = document.getElementById("nav-container-menu-icon");
+toggleBack.addEventListener("click", function(){
+    if(toggleBack.innerHTML === "≡"){
+        toggleBack.innerHTML = "⨉";
+    } else {
+        toggleBack.innerHTML = "≡"
+    }
+}
+);
 
 
 

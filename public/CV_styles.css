@@ -33,7 +33,7 @@ p{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
+  max-width: 75%;
 }
 
 div{
@@ -44,7 +44,7 @@ div{
 
 header{
   display: grid;
-  gap: 20px;
+  /* gap: 20px; */
   width: 100%;
   grid-template-columns: 15% 65% 20% ;
 
@@ -78,14 +78,14 @@ header{
   justify-content: center;
   max-width: 100%;
   line-height: 22px;
-  padding: 35px 0% 0px 0%;
+  padding: 35px 0;
 }
 
 .contact-container-logos{
   display: flex;
   flex-wrap:wrap;
   max-width: 100%;
-  gap: 20px;
+  gap: 15px;
 }
 
 .contact-container-logos a img{
@@ -105,6 +105,9 @@ header{
   justify-content: end;
   padding: 35px 0 0 0;
   max-width: 100%;
+  font-size: 1.6rem;
+  line-height: 22px;
+
 }
 
 nav .cv-title{
@@ -230,10 +233,9 @@ section{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 25px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 70%;
+  max-width: 85%;
 }
 
 .site-main-ct{
@@ -247,13 +249,16 @@ section{
   /* text-align: justify;
   text-align-last: center; */
   text-align: center;
-  font-size: 1.6rem;
-
+  font-size: 1.5rem;
 }
 
-.site-main .about{
-  margin-top: 50px;
+.site-main-text h2{
+  padding: 15px 0 ;
 }
+
+/* .site-main .about{
+  margin-top: 0px;
+} */
 
 h2{
   margin: 0;
@@ -280,6 +285,7 @@ h2{
 .grid-left-year p{
   font-size: 2rem;
   margin: 0;
+  text-align: right;
 }
 
 .grid-mid p{
@@ -297,9 +303,10 @@ h2{
 .grid-right-company p{
   font-size: 2rem;
   margin: 0;
+  text-align: left;
 }
 .grid-right-title p{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0;
   text-align: left;
 }
@@ -347,11 +354,382 @@ footer{
 .back-to-top{
   display: flex;
   justify-content: end;
-  margin: 25px 0 100px 0;
+  padding: 50px 0 25px 0;
+  font-size: 1.5rem;
 }
 
 .arrow-backToTop{
   text-decoration: none;
-  font-size: 25px;
+  color: #000000;
 }
 
+.arrow-backToTop:hover {
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  .site-container{
+    max-width: 85%;
+  }
+  .site-main{
+    max-width: 100%;
+    margin: 0;
+  }
+
+
+  header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50% ;
+  }
+  
+  .contact-container{
+    display:none;
+  }
+
+  .nav-container-titles{
+    display: none;
+  }
+
+  .nav-container-popup{
+    /* position: absolute; */
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 5;
+    
+  }
+
+  .nav-container-menu{
+    display: block;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 20px 0 0 0;
+  }
+  
+  .nav-container-popup .nav-container-popupText{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    color: #000000;
+    text-align: center;
+    z-index: -1;
+    top:0;
+    left: 0;
+  }
+
+  .nav-container-popup .show{
+    display: block;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+
+  .nav-container-popupText ul{
+    padding: 100px 0 30px 0;
+  
+  }
+
+  .nav-container-popupText ul li {
+    padding-bottom: 20px;
+  }
+
+  .nav-container-popupText ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 3rem;
+
+  }
+
+  input, div.popup-subMenu-portfolio, div.popup-subMenu-lang{
+    display: none;
+  }
+
+  .popupTitle{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    font-size: 3rem;
+    
+    padding: 10px 0;
+  }
+
+  #popupDropdown1:checked~div.popup-subMenu-portfolio,  #popupDropdown2:checked~div.popup-subMenu-lang{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    
+  }
+
+  .popup-subMenu-portfolio a, .popup-subMenu-lang a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  .nav-container-popupContact{
+    margin-top: 30px;
+  }
+
+  .nav-container-popupContact .nav-container-logos{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-container-popupContact div img{
+    width: 40px;
+    margin: 10px;
+  }
+
+  .nav-container-popupContact .nav-popupContact-mail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-popupContact-mail div p{
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .sideBar{
+    display: none;
+  }
+  .mainContent{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .welcome-text{
+    display: block;
+    margin: 30px 0 20px 0;
+  }
+
+  .project-covers-container{
+    display: block;
+  }
+   
+  .project-cover{
+    display: block;
+    width: 100%;
+  
+  }  
+
+  .overlay{
+    display: none;
+     
+  }
+  .prjTitle{
+    display: block;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    font-size: ;
+  }
+
+  .prjTitle .prjTitle-Text{
+    font-size: 1.3rem;
+  }
+  
+  .text-bottom p{
+    margin-top: 50px;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .footer-contact-mail p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+
+  .site-main-text{
+    margin: 15px 0 15px 0;
+    /* text-align: justify;
+    text-align-last: center; */
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .site-main-text h2{
+    padding: 15px 0 ;
+  }
+
+  .grid-left-year p{
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .grid-mid p{
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .grid-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid-right-company p{
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: left;
+    
+  }
+  .grid-right-title p{
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .work-experience, .education, .contact{
+    margin: 0;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px){
+  .site-main{
+    max-width: 100%;
+  }
+  
+  .contact-container{
+    display:none;
+  }
+
+  .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
+    display: none;
+  }
+
+  header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50% ;
+  }
+
+  .sideBar{
+    display: none;
+  }
+  .mainContent{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .welcome-text{
+    display: block;
+    margin: 30px 0 20px 0;
+  }
+
+  .project-covers-container{
+    display: block;
+  }
+   
+  .project-cover{
+    display: block;
+    width: 100%;
+  
+  }  
+
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.5rem;
+  
+  }
+
+  .overlay{
+    display: none;
+     
+  }
+  .prjTitle{
+    display: block;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    font-size: ;
+  }
+
+  .prjTitle .prjTitle-Text{
+    font-size: 1.3rem;
+  }
+  
+  .text-bottom p{
+    margin-top: 50px;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px){
+  
+  .site-main{
+    max-width: 100%;
+  }
+
+  header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50% ;
+  }
+
+  .contact-container{
+    display:none;
+  }
+
+  .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
+    display: none;
+  }
+
+  .mainContent-respoMenu{
+    display: none;
+  }
+  
+  .prjTitle{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1201px){
+  .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
+    display: none;
+  }
+
+  
+
+  .mainContent-respoMenu{
+    display: none;
+  }
+
+  .prjTitle{
+    display: none;
+  }
+  
+}
