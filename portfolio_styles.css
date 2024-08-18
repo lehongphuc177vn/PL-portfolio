@@ -616,6 +616,12 @@ footer{
     max-width: 90%;
   }
   
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.3rem;
+  
+  }
 }
 
 
@@ -661,7 +667,7 @@ footer{
   .mainContent-respoMenu a{
     color: #000000;
   
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   
   }
 

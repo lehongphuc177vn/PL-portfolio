@@ -224,7 +224,7 @@ margin: 0 0 20px 0;
 .mainContent-respoMenu a{
 color: #000000;
 
-font-size: 1rem;
+font-size: 1.5rem;
 
 }
 
@@ -616,6 +616,12 @@ text-align: center;
     max-width: 90%;
   }
   
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.3rem;
+  
+  }
 }
 
 
