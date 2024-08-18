@@ -721,8 +721,20 @@ text-align: center;
     display:none;
   }
 
-  .mainContent-respoMenu{
+  .sideBar{
     display: none;
+  }
+  .mainContent{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.8rem;
+  
   }
 
   .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{

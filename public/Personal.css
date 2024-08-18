@@ -366,7 +366,7 @@ section{
 .modal-content{
     margin: auto;
     display: block;
-    max-width:100vh ;
+    max-width:100vh;
 }
 
 #caption{
@@ -760,6 +760,12 @@ footer{
     font-size: 1.3rem;
   
   }
+
+  .modal-content{
+    max-width:fit-content;
+  }
+
+  
 }
 
 
@@ -836,10 +842,82 @@ footer{
     font-style: italic;
     text-align: center;
   }
+
+  .modal-content{
+    max-width:fit-content;
+  }
 }
 
 
-@media (min-width: 769px) and (max-width: 1200px){
+
+@media (min-width: 769px) and (max-width: 1024px){
+  header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50% ;
+  }
+  
+  .overlay{
+    display: none;
+     
+  }
+
+  .project-covers-container-oneColumn{
+    display: none;
+  }
+
+  .project-covers-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-cover{
+    display: block;
+    width: 100%;
+  
+  }
+
+  .contact-container{
+    display:none;
+  }
+
+  .sideBar{
+    display: none;
+  }
+  .mainContent{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.8rem;
+  
+  }
+
+  .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
+    display: none;
+  }
+
+  .prjTitle{
+    display: block;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    font-size: ;
+  }
+
+  .prjTitle .prjTitle-Text{
+    font-size: 2rem;
+  }
+
+  .modal-content{
+    max-width:fit-content;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
   
   header{
     display: grid;
@@ -854,7 +932,7 @@ footer{
   .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
     display: none;
   }
-
+  
   .mainContent-respoMenu{
     display: none;
   }

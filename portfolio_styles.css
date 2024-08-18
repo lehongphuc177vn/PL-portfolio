@@ -721,8 +721,20 @@ footer{
     display:none;
   }
 
-  .mainContent-respoMenu{
+  .sideBar{
     display: none;
+  }
+  .mainContent{
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .mainContent-respoMenu a{
+    color: #000000;
+  
+    font-size: 1.8rem;
+  
   }
 
   .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
@@ -739,6 +751,8 @@ footer{
   .prjTitle .prjTitle-Text{
     font-size: 2rem;
   }
+
+  
 }
 
 @media (min-width: 1025px) and (max-width: 1200px){
