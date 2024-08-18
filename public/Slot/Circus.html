@@ -20,29 +20,29 @@
   </head>
   <body class="beiruti">
     <div class="site-container">
-      <header class="site-header">
+     <header class="site-header">
         <div class="logo-container">
           <div class="logo">
-            <a href="#">Phuc__Le</a>
+            <a href="../../index.html">Phuc__Le</a>
           </div>
         </div>
 
         <div class="contact-container">
           <div class="contact-container-logos">
-            <div>
+            <span>
               <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../../assets/linkedin.png" alt="LinkedIn Logo"></a>
-            </div>
-            <div>
+            </span>
+            <span>
               <a href="https://t.me/phucle177" target="_blank"><img src="../../assets/telegram.png" alt="Telegram Logo" ></a>
-            </div>
-            <div>
+            </span>
+            <span>
               <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../../assets/instagram.png" alt="Instagram Logo"></a>
+            </span>
+            <div class="contact-email">
+              <a style="font-size: 1.6rem; text-decoration: none;">lehongphuc177@gmail.com</a>
             </div>
-            <div>
-              <a style="font-size: 1.5rem; text-decoration: none;">lehongphuc177@gmail.com</a>
-            </div>
-            <div>
-              <a style="font-size: 1.5rem; text-decoration: none;">+84 366 42 77 05</a>
+            <div class="contact-phone">
+              <a style="font-size: 1.6rem; text-decoration: none;">+84 366 42 77 05</a>
             </div>
           </div>
         </div>
@@ -52,17 +52,13 @@
           <nav class="nav-container-titles">
 
             <div class="cv-title">
-              <a href="../CV.html" >CV</a>
+              <a href="../../public/CV.html" >CV</a>
             </div>
 
             <div class="portfolio-title">
               <a href="../../index.html" class="active">Portfolio</a>
             </div>
-
-            <!-- <div class="contact-title">
-              <a href="#">Contact</a>
-            </div> -->
-            
+           
             <div class="dropDown">
               <button class="dropBtn beiruti"><span class="dropbtn-lang">En</span><span class="dropbtn-arrow">▾</span></button>
               <div class="dropContent beiruti">
@@ -72,6 +68,67 @@
 
           </nav>
 
+
+          <div class="nav-container-popup">
+  
+            <div class="nav-container-menu"  onclick="myFunction()">
+              <span id="nav-container-menu-icon">≡</span>
+            </div>
+
+            <div class="nav-container-popupText" id="text-Popup">
+
+              <ul style="list-style-type: none;" class="popup-Menu">
+                <li><a  href="../../public/CV.html">CV</a></li>
+ 
+                <input id="popupDropdown1"  type="checkbox" name="menu1" />
+                <label for="popupDropdown1" class="popupTitle">Portfolio</label>
+                <div class="popup-subMenu-portfolio">
+                  <a href="../../index.html">Slot Game</a>
+                  <a href="../../public/MobileGames.html">Mobile Game</a>
+                  <a href="../../public/Personal.html">Personal </a>
+                </div>
+
+                <input id="popupDropdown2"  type="checkbox" name="menu2" />
+                <label for="popupDropdown2" class="popupTitle">Language</label>
+                <div class="popup-subMenu-lang">
+                  <a  href="">Eng</a>
+                  <a  href="">Vi</a>
+                </div>
+                
+
+              </ul>
+              <hr style="max-width: 80%;">
+ 
+              <div class="nav-container-popupContact">
+                <div class="nav-popupContact-logos">
+
+                    <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../../assets/linkedin.png" alt="LinkedIn Logo"></a>
+
+                  
+                    <a href="https://t.me/phucle177" target="_blank"><img src="../../assets/telegram.png" alt="Telegram Logo" ></a>
+                 
+                 
+                    <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../../assets/instagram.png" alt="Instagram Logo"></a>
+                
+                </div>
+                
+                <div class="nav-popupContact-mail">
+                  <div class="contact-phone">
+                    <p >+84 366 42 77 05</p>
+                  </div>
+                  <div class="contact-email">
+                    <p >lehongphuc177@gmail.com</p>
+                  </div>
+
+                </div>
+
+ 
+              </div>
+ 
+            </div>
+
+          </div>
+
         </div>
 
       </header>
@@ -80,10 +137,42 @@
         <div class="site-main">
           <section class="welcome-text">
             <div class="welcome">
-              <p class="wc-title">Amazing Circus</p>
-              <p class="wc-desc">Tools  |  Photoshop <br> Role | UI Design, Character Design, Compositing, Background Design</p>
-              
+              <span class="wc-title">Amazing Circus     —     2022</span>
+              <div class="exp-grid">
+
+                <div class="prj-Description">
+                  <p>
+                    This project was inspired by a movie called "The Greatest Showman", where there is a Showman, his assistant, 
+                    and many more things in a circus to be performed. 
+                     My job in this project is to create UI for Base Game, and Free Spins Screens, create an illustration for Total Win Screen, design Characters,
+                      and polish symbols received from another artist.
+                  </p>
+              </div>
+
+                <div class="grid-left">
+                  <span>Tool</span>
+                </div>
+                <!-- <div  class="grid-mid">
+                  <span>—</span>
+                </div> -->
+                <div class="grid-right">
+                  <span>Photoshop, Illustrator, Daz 3D</span>
+                </div>
+
+
+                <div class="grid-left">
+                  <span>Role</span>
+                </div>
+                <!-- <div  class="grid-mid">
+                  <span>—</span>
+                </div> -->
+                <div class="grid-right">
+                  <span>UI Design, Compositing, Painting</span>
+                </div>
+              </div>
+           
             </div>
+            <hr style="max-width: 70%;">
           </section>
         
   
@@ -91,31 +180,76 @@
             <div class="sideBar">
               <div class="sideBar-ct-title">
                 <a class="active-sideBar" class="sideBar-text slot" href="../../index.html">Slot Games</a>
+                <div class="sideBar-dropdown">
+                  <a href="../Slot/RunPugRun.html">Run Pug Run</a>
+                  <a href="../Slot/PumpkinNight.html">Pumpkin Night</a>
+                  <a href="../Slot/VikingValor.html">Vikings Valor</a>
+                  <a href="../Slot/DragonWonder.html">Dragon Wonder</a>
+                  <a href="../Slot/Genie.html">Wishes of the Genie</a>
+                  <a href="../Slot/Cosmos.html">Cosmos Theme</a>
+                  <a href="../Slot/EmpressOfTheBlackSea.html">Empress Of The Black <br> Sea</a>
+                  <a href="../Slot/newYear2025.html">Countdown 2025</a>
+                  <a href="../Slot/Circus.html">Amazing Circus</a>
+                  <a href="../Slot/Phoenix.html">Super Phoenix</a>
+                  <a href="../Slot/Jurassic.html">Jurassic Theme</a>
+                  <a href="../Slot/WildFishHunter.html">Wild Fish Hunter</a>
+                  <a href="../Slot/SambaFiesta.html">Samba Fiesta</a>
+                  <a href="../Slot/Pandora.html">Mysteries Of Pandora</a>
+                  <a href="../Slot/ElToro.html">Legendary El Toro</a>
+                  <a href="../Slot/Mermaid.html">Mermaid's Treasure</a>
+                  <a href="../Slot/GateOfKunlun.html">Gate Of Kunlun</a>
+                  <a href="../Slot/xMas2022.html">Sexy Christmas Sirens</a>
+                  <a href="../Slot/Else.html">Everything Else</a>                  
+
+                </div>
               </div>
               
               <div class="sideBar-ct-title">
-                <a class="sideBar-text mobile" href="">Mobile Games</a>
+                <a class="sideBar-text mobile" href="../MobileGames.html">Mobile Games</a>
+                <div class="sideBar-dropdown">
+                  <a href="../Mobile/GalaxyAttack.html">Galaxy Attack</a>
+                  <a href="../Mobile/SpaceAttack.html">Space Attack</a>
+                  <a href="../Mobile/Shootero Remake.html">Chicken Shootero</a>
+                  <a href="../Mobile/Housepin.html">Housepin</a>
+                  <a href="../Mobile/Sheeba.html">Sheeba</a>
+                  <a href="../Mobile/DexyVerse.html">Dexy Verse</a>
+                  <a href="../Mobile/Overdrive2.html">Overdrive II</a>
+                  <a href="../Mobile/Others.html">Others</a>
+
+                </div>
               </div>
               
               <div class="sideBar-ct-title">
-                <a class="sideBar-text personal" href="">Personal Projects</a>   
+                <a class="sideBar-text personal" href="../Personal.html">Personal Projects</a>   
               </div>
   
-              <div class="sideBar-ct-title">
-                <a class="sideBar-text else" href="">Everything Else</a>
-              </div>
+              <!-- <div class="sideBar-ct-title">
+                <a class="sideBar-text else" href="./EverythingElse.html">Everything Else</a>
+              </div> -->
           
                          
             </div>
   
             <div class="mainContent">
+              <div class="mainContent-respoMenu">
+                <a class="active-respo" href="../../index.html">Slot game</a>
+                <a style="text-decoration: none;"  href="../MobileGames.html">Mobile game</a>
+                <a style="text-decoration: none;" href="../Personal.html">Personal</a>
+              </div>
               <div class="project-covers-container">
                 
               <div>
-                
-                <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/RunPugRun/RunPugRun_Loading.png" alt="RunPugRun_Loading" style="width:100%;max-width:300px">
-                <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/RunPugRun/RunPugRun_Intro_Fur.png" alt="RunPugRun_Intro" style="width:100%;max-width:300px">
-                <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/RunPugRun/RunPugRun_Outro.png" alt="RunPugRun_Outro" style="width:100%;max-width:300px">
+                <div class="project-images">
+                  <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/Circus/Base game.jpg" alt="Base Game" style="width:100%;max-width:32.5%">
+                  <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/Circus/FreeSpin.jpg" alt="Free Spins" style="width:100%;max-width:32.5%">
+                  <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/Circus/Outro_ex.jpg" alt="Total Win" style="width:100%;max-width:32.5%">
+                  <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/Circus/BigBackground_Mg.jpg" alt="Big Background" style="width:100%;max-width:100%">
+                  <img class="slotsImgs" id="slotImg" src="../../assets/SlotGame/Circus/Character & symbol.jpg" alt="Character and Scatter Symbol" style="width:100%;max-width:100%">
+                  
+                  
+
+                </div>
+                 
                 
                 <div id="myModal" class="modal">
                   <span class="close">&times;</span>
@@ -148,11 +282,11 @@
         <div class="footer-container">
           <div class="footer-contact">
             <div class="footer-contact-logo">
-              <a href=""><img src="./assets/linkedin.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../../assets/linkedin.png" alt="LinkedIn Logo"></a>
 
-              <a href=""><img src="./assets/telegram.png" alt=""></a>
+              <a href="https://t.me/phucle177" target="_blank"><img src="../../assets/telegram.png" alt="Telegram Logo" ></a>
 
-              <a href=""><img src="./assets/instagram.png" alt=""></a>
+              <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../../assets/instagram.png" alt="Instagram Logo"></a>
 
             </div>
             <div class="footer-contact-mail">
@@ -160,10 +294,12 @@
               <p>+84 366 42 77 05</p>
             </div>
           </div>
-          <div class="text-bottom">
-            <p>Several assets appeared in some of my projects were made by AI.
-            Please scroll down to the last image of each project to see my breakdown of which parts I made <br>and which are from my colleagues or generated by AI. Thank you.</p>
-          </div>
+          <!-- <div class="text-bottom">
+            <p>Several assets appeared in some of my projects were made by AI,
+            and some were made by my colleagues since we worked
+            as a team in each project.
+            Please scroll down to see my notes of which parts belongs to my colleagues or generated by A.I. Thank you.</p>
+          </div> -->
       </footer>
 
     </div>
