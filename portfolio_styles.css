@@ -224,7 +224,7 @@ section{
 .mainContent-respoMenu a{
   color: #000000;
 
-  font-size: 1rem;
+  font-size: 1.5rem;
 
 }
 
@@ -689,8 +689,54 @@ footer{
 }
 
 
-@media (min-width: 769px) and (max-width: 1200px){
+@media (min-width: 769px) and (max-width: 1024px){
+  header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50% ;
+  }
   
+  .overlay{
+    display: none;
+     
+  }
+
+  .project-covers-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-cover{
+    display: block;
+    width: 100%;
+  
+  }
+
+  .contact-container{
+    display:none;
+  }
+
+  .mainContent-respoMenu{
+    display: none;
+  }
+
+  .nav-container-popup .nav-container-menu, .nav-container-popup .nav-container-popupText{
+    display: none;
+  }
+
+  .prjTitle{
+    display: block;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    font-size: ;
+  }
+
+  .prjTitle .prjTitle-Text{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+
   header{
     display: grid;
     width: 100%;
@@ -716,7 +762,7 @@ footer{
   .sideBar-dropdown a{
     font-size: 1.2rem;
   }
-
+  
 }
 
 @media (min-width: 1201px){
