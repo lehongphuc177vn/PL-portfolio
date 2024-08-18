@@ -881,18 +881,18 @@ footer{
     display:none;
   }
 
-  .sideBar{
-    display: none;
-  }
+ 
   .mainContent{
     display: block;
     max-width: 100%;
   }
 
+  .sideBar{
+    display: none;
+  }
 
   .mainContent-respoMenu a{
     color: #000000;
-  
     font-size: 1.8rem;
   
   }
