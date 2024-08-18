@@ -406,7 +406,7 @@ section{
 .modal{
     display: none;
     position:fixed;
-    z-index: 1;
+    z-index: 10;
     padding-top: 30px;
     left: 0;
     top: 0;
@@ -471,11 +471,7 @@ section{
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
+
 
 
 
@@ -750,8 +746,15 @@ footer{
     font-size: 1rem;
   }
 
+  .modal{
+
+    z-index: 20;
+    padding-top: 130px;
+  
+  }
+
   .modal-content{
-    max-width:fit-content;
+    max-width:100vh;
   }
 }
 
