@@ -761,6 +761,7 @@ footer{
   
   }
 
+
   .modal2{
 
     z-index: 20;
@@ -850,8 +851,15 @@ footer{
     text-align: center;
   }
 
+  .modal{
+
+    z-index: 20;
+    padding-top: 130px;
+  
+  }
+
   .modal-content{
-    max-width:fit-content;
+    max-width:100vh;
   }
 }
 
