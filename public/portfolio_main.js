@@ -1,6 +1,25 @@
 // alert("hi");
 
+// PASSWORD
 
+document.addEventListener("DOMContentLoaded", function () {
+
+  const PASSWORD = "phelac177";
+
+  document.querySelectorAll(".locked").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const pass = prompt("Enter password");
+      if (pass === PASSWORD) {
+        window.location.href = this.href;
+      } else {
+        alert("Wrong password. Please try again.");
+      }
+    });
+  });
+
+});
 
 
 // NAVBAR
