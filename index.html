@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PL Portfolio</title>
 
-    <style>
-    /* // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 200 to 900 */
-
-
-    </style>
-
-    <link rel="stylesheet" href="./portfolio_styles.css">
+    <link rel="stylesheet" href="/CV_styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
 
 
-  </head>
-  <body class="beiruti">
+</head>
+<body class="beiruti">
     <div class="site-container">
       <header class="site-header">
         <div class="logo-container">
           <div class="logo">
-            <a href="./index.html">Phuc__Le</a>
+            <a href="../index.html">Phuc__Le</a>
           </div>
         </div>
 
         <div class="contact-container">
           <div class="contact-container-logos">
-            <span>
-              <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn Logo"></a>
-            </span>
-            <span>
-              <a href="https://t.me/phucle177" target="_blank"><img src="./assets/telegram.png" alt="Telegram Logo" ></a>
-            </span>
-            <span>
-              <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="./assets/instagram.png" alt="Instagram Logo"></a>
-            </span>
-            <div class="contact-email">
+            <div>
+              <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../assets/linkedin.png" alt="LinkedIn Logo"></a>
+            </div>
+            <div>
+              <a href="https://t.me/phucle177" target="_blank"><img src="../assets/telegram.png" alt="Telegram Logo" ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../assets/instagram.png" alt="Instagram Logo"></a>
+            </div>
+            <div>
               <a style="font-size: 1.6rem; text-decoration: none;">lehongphuc177@gmail.com</a>
             </div>
-            <div class="contact-phone">
+            <div>
               <a style="font-size: 1.6rem; text-decoration: none;">+84 366 42 77 05</a>
             </div>
           </div>
@@ -53,13 +46,17 @@
           <nav class="nav-container-titles">
 
             <div class="cv-title">
-              <a href="./public/CV.html" >CV</a>
+              <a href="/index.html" class="active">CV</a>
             </div>
 
             <div class="portfolio-title">
-              <a href="#" class="active">Portfolio</a>
+              <a href="./public/portfolio.html" class="locked">Portfolio</a>
             </div>
-           
+
+            <!-- <div class="contact-title">
+              <a href="#">Contact</a>
+            </div> -->
+            
             <div class="dropDown">
               <button class="dropBtn beiruti"><span class="dropbtn-lang">En</span><span class="dropbtn-arrow">▾</span></button>
               <div class="dropContent beiruti">
@@ -68,8 +65,6 @@
             </div>
 
           </nav>
-
-
           <div class="nav-container-popup">
   
             <div class="nav-container-menu"  onclick="myFunction()">
@@ -79,12 +74,12 @@
             <div class="nav-container-popupText" id="text-Popup">
 
               <ul style="list-style-type: none;" class="popup-Menu">
-                <li><a  href="./public/CV.html">CV</a></li>
+                <li><a  href="./index.html">CV</a></li>
  
                 <input id="popupDropdown1"  type="checkbox" name="menu1" />
                 <label for="popupDropdown1" class="popupTitle">Portfolio</label>
                 <div class="popup-subMenu-portfolio">
-                  <a href="./index.html">Slot Game</a>
+                  <a href="./public/portfolio.html">Slot Game</a>
                   <a href="./public/MobileGames.html">Mobile Game</a>
                   <a href="./public/Personal.html">Personal </a>
                 </div>
@@ -103,13 +98,13 @@
               <div class="nav-container-popupContact">
                 <div class="nav-popupContact-logos">
 
-                    <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn Logo"></a>
+                    <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../assets/linkedin.png" alt="LinkedIn Logo"></a>
 
                   
-                    <a href="https://t.me/phucle177" target="_blank"><img src="./assets/telegram.png" alt="Telegram Logo" ></a>
+                    <a href="https://t.me/phucle177" target="_blank"><img src="../assets/telegram.png" alt="Telegram Logo" ></a>
                  
                  
-                    <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="./assets/instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../assets/instagram.png" alt="Instagram Logo"></a>
                 
                 </div>
                 
@@ -129,499 +124,280 @@
             </div>
 
           </div>
-
         </div>
-        
+
       </header>
-
-      <main>
-        <div class="site-main">
-          <section class="welcome-text">
-            <div>
-              <p class="welcome">Hello there. Welcome to my Portfolio!</p>
-              <hr style="max-width: 40%;">
-            </div>
-          </section>
-          
-          <section class="sideBar-mainContent">
-            <div class="sideBar">
-              <div class="sideBar-ct-title">
-                <a class="active-sideBar"  class="sideBar-text slot" href="./index.html">Slot Games</a>
-                <div class="sideBar-dropdown">
+        <main>
+            <section class="site-main">
+              <div class="site-max-width">
+                
+                <div class="site-main-ct about">
+                  <div class="site-main-text">
+                    <h2>About</h2>
+                    <p>
+                      Hi. My full name is <i>Le Hong Phuc</i>. You can call me <i>Phil</i> if <i>"Phuc"</i> sounds weird to you. I am originally from Vinh City. I studied and lived in Hanoi for around 10 years
+                      and currently, I'm working and living in Ho Chi Minh City. <br>
+                      I have been working in the industry as a 2D artist for around 6 to 7 years.
+                      Most of my knowledge comes from self-study, tutorials, books, short-term painting and drawing courses,
+                      as well as valuable help and feedback from my colleagues.
+                      <br>
+                      My workflow involves using multiple software, ranging from 2D software like <i>Adobe Photoshop</i>
+                      and <i>Adobe Illustrator</i> to 3D software like <i>Maya</i>, <i>Blender</i>, <i>Zbrush</i>, <i>Substance Painter</i>, and a bit of <i>Unity</i>.
+                      <br>
+                      I also use AI tools such as <i>Midjourney, Stable Diffusion, ChatGPT,</i>  and <i>Vizcom</i>  when needed at work to help create products and meet deadlines.
+                      <br>
                   
-                  <a href="./public/Slot/TomyumBonanza.html">Tomyum Bonanza</a>
-                  <a href="./public/Slot/ProsperityExpress.html">Prosperity Express</a>
-                  <a href="./public/Slot/AphroditesBlessing.html">Aphrodite's Blessing</a>
-                  <a href="./public/Slot/DragonFortune.html">Dragon Fortune</a>
-                  <a href="./public/Slot/HeavenlyWukong.html">Heavenly Feast with Wukong</a>
-                  <a href="./public/Slot/LuckyTiger.html">Lucky Tiger</a>
-                  <a href="./public/Slot/WildBountyWays.html">Wild Bounty Ways</a>
-                  <a href="./public/Slot/WildTrainHeist.html">Wild Train Heist</a>
-                  <a href="./public/Slot/RunPugRun.html">Run Pug Run</a>
-                  <a href="./public/Slot/PumpkinNight.html">Pumpkin Night</a>
-                  <a href="./public/Slot/VikingValor.html">Vikings Valor</a>
-                  <a href="./public/Slot/DragonWonder.html">Dragon Wonder</a>
-                  <a href="./public/Slot/Labubu.html">Labubu</a>
-                  <a href="./public/Slot/Genie.html">Wishes of the Genie</a>
-                  <a href="./public/Slot/EmpressOfTheBlackSea.html">Empress Of The Black <br> Sea</a>
-                  <a href="./public/Slot/TowerOfRiches.html">Tower of Riches</a>
-                  <a href="./public/Slot/Cosmos.html">Cosmos Theme</a>
-                  <a href="./public/Slot/LegendoftheWhiteandGreenSnake.html">Legend of the White <br>& Green Snake</a>
-                  <a href="./public/Slot/newYear2025.html">Countdown 2025</a>
-                  <a href="./public/Slot/Circus.html">Amazing Circus</a>
-                  <a href="./public/Slot/Phoenix.html">Super Phoenix</a>
-                  <a href="./public/Slot/Jurassic.html">Jurassic Theme</a>
-                  <a href="./public/Slot/WildFishHunter.html">Wild Fish Hunter</a>
-                  <a href="./public/Slot/SambaFiesta.html">Samba Fiesta</a>
-                  <a href="./public/Slot/Pandora.html">Mysteries Of Pandora</a>
-                  <a href="./public/Slot/ElToro.html">Legendary El Toro</a>
-                  <a href="./public/Slot/Mermaid.html">Mermaid's Treasure</a>
-                  <a href="./public/Slot/GateOfKunlun.html">Gate Of Kunlun</a>
-                  <a href="./public/Slot/xMas2022.html">Sexy Christmas Sirens</a>
-                  <a href="./public/Slot/Else.html">Everything Else</a>                  
-
-                </div>
-              </div>
-              
-              <div class="sideBar-ct-title">
-                <a class="sideBar-text mobile" href="./public/MobileGames.html">Mobile Games</a>
-                <div class="sideBar-dropdown">
-                  <a href="./public/Mobile/GalaxyAttack.html">Galaxy Attack</a>
-                  <a href="./public/Mobile/SpaceAttack.html">Space Attack</a>
-                  <a href="./public/Mobile/Shootero Remake.html">Chicken Shootero</a>
-                  <a href="./public/Mobile/Housepin.html">Housepin</a>
-                  <a href="./public/Mobile/Sheeba.html">Sheeba</a>
-                  <a href="./public/Mobile/DexyVerse.html">Dexy Verse</a>
-                  <a href="./public/Mobile/Overdrive2.html">Overdrive II</a>
-                  <a href="./public/Mobile/Others.html">Others</a>
-
-                </div>
-              </div>
-              
-              <div class="sideBar-ct-title">
-                <a class="sideBar-text personal" href="./public/Personal.html">Personal</a>   
-              </div>
-  
-              <!-- <div class="sideBar-ct-title">
-                <a class="sideBar-text else" href="./EverythingElse.html">Everything Else</a>
-              </div> -->
-          
-                         
-            </div>
-  
-            <div class="mainContent">
-
-              <div class="mainContent-respoMenu">
-                <a class="active-respo" href="./index.html">Slot game</a>
-                <a style="text-decoration: none;"  href="./public/MobileGames.html">Mobile game</a>
-                <a style="text-decoration: none;" href="./public/Personal.html">Personal</a>
-              </div>
-
-              <div class="project-covers-container">
-                
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/TomyumBonanza.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/TomyumBonanza.jpg" alt="Tomyum-Bonanza-CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Tomyum Bonanza<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Tomyum Bonanza - 2025 </div>
+                    </p>
                   </div>
                 </div>
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/ProsperityExpress.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/prosperity-express.jpg" alt="prosperity-express-CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Prosperity Express <br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Prosperity Express - 2025 </div>
-                  </div>
-                </div>  
+                <hr style="max-width: 50%;">
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/AphroditesBlessing.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/aphrodite.jpg" alt="Aphrodite's Blessing - CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Aphrodite's Blessing<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Aphrodite's Blessing - 2025 </div>
-                  </div>
-                </div>
+                <div class="work-experience">
+                  <div class="site-main-ct">
+                    <div class="site-main-text">
+                      <h2>Work Experience</h2>
+                      <div class="exp-grid">
+                        
+                        <!-- Koban -->
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2025-now</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                        
+                        <div class="grid-right">
+                            <div class="grid-right-company">
+                              <p>Koban Games Studio</p>
+                            </div>
+                            <div class="grid-right-title">
+                              <p>2D Art Lead - Ho Chi Minh City</p>
+                              <p>Provide feedback for artists in the team. Design new games as requested.
+                              </p>
+                            </div>
+                        </div>
 
+                        <!-- gamify -->
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2022-2025</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                        
+                        <div class="grid-right">
+                            <div class="grid-right-company">
+                              <p>Gamify Studios</p>
+                            </div>
+                            <div class="grid-right-title">
+                              <p>2D Artist - Ho Chi Minh City</p>
+                              <p>Create logos, symbols, UI, backgrounds, characters,
+                                 and Illustrations for slot game screens
+                              </p>
+                            </div>
+                        </div>
+                        
+                        <!-- gemmob -->
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/DragonFortune.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/DragonFortune.jpg" alt="Dragon Fortune - CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Dragon Fortune<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Dragon Fortune - 2025 </div>
-                  </div>
-                </div>
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2019-2022</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                      
+                        <div class="grid-right">
+                          <div class="grid-right-company">
+                            <p>Gemmob Studio</p>
+                          </div>
+                          <div class="grid-right-title">
+                            <p>2D Artist - Hanoi</p>
+                            <p>Create game assets to be integrated
+                              into mobile games. Started my career during this time, applying knowledge and gaining practical experience through production work
+                            </p>
+                          </div>
+                        </div>
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/HeavenlyWukong.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/heavenlyWukong.jpg" alt="Heavenly Feast with Wukong-CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Heavenly Feast with Wukong<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Heavenly Feast with Wukong - 2025 </div>
-                  </div>
-                </div>
+                        <!-- gear inc -->
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/LuckyTiger.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/luckyTiger.jpg" alt="LuckyTiger-CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Lucky Tiger<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Lucky Tiger - 2025 </div>
-                  </div>
-                </div>
-                                
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/WildBountyWays.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/wildBountyWays.jpg" alt="WildBountyWays-CoverImage">
-                    
-                    <div class="overlay">
-                      <div class="prjText">Wild Bounty Ways<br>2025</div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Wild Bounty Ways - 2025 </div>
-                  </div>
-                </div>
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2018</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                      
+                        <div class="grid-right">
+                          <div class="grid-right-company">
+                            <p>Gear Inc.</p>
+                          </div>
+                          <div class="grid-right-title">
+                            <p>2D Artist Intern - Hanoi</p>
+                            <p>This was the first game company I joined. I worked there for several months, handling basic tasks as a 2D Artist
+                            </p>
+                          </div>
+                        </div>
 
-                 <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/WildTrainHeist.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/wildTrainHeist.jpg" alt="Wild Train Heist-CoverImage">
-                    <div class="overlay">
-                      <div class="prjText">Wild Train Heist <br>2025 </div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Wild Train Heist - 2025</div>
-                  </div>
-                </div>
+                        <!-- freaky motion -->
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/RunPugRun.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/RunPugRun.jpg" alt="RunPugRun-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/FF4Xpcu.png" alt="RunPugRun-Cover-Image"> -->
-                    <div class="overlay">
-                      <div class="prjText">Run Pug Run <br>2023 </div>
-                    </div>
-                   </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Run Pug Run - 2023 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/PumpkinNight.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/halloween.jpg" alt="PumpkinNight-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/exNEu70.png" alt="PumpkinNight-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Pumpkin Night <br>2023</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Pumpkin Night - 2023 </div>
-                  </div>
-                </div>
-  
-  
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/VikingValor.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Vikings.jpg" alt="Vikings-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/wO3uxwi.png" alt="Vikings-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Viking Valor <br>2024 </div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Viking Valor - 2024 </div>
-                  </div>
-                </div>
-                
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2017</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                      
+                        <div class="grid-right">
+                          <div class="grid-right-company">
+                            <p>Freaky Motion</p>
+                          </div>
+                          <div class="grid-right-title">
+                            <p>Graphic Desinger Intern - Hanoi</p>
+                            <p>Worked on both 2D tasks and entry-level 3D assignments, focus on motion graphics design.
+                            </p>
+                          </div>
+                        </div>
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/DragonWonder.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/lunarNY2024.jpg" alt="DragonWonder-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/k5ye2nT.png" alt="DragonWonder-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Dragon Wonder <br> 2023</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Dragon Wonder - 2023</div>
-                  </div>
-                </div>
+                        <!-- vc corp -->
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Labubu.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/labubu.jpg" alt="labubu-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/wO3uxwi.png" alt="Vikings-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Labubu <br>2024 </div>
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2016</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                      
+                        <div class="grid-right">
+                          <div class="grid-right-company">
+                            <p>Admicro - Vc Corp</p>
+                          </div>
+                          <div class="grid-right-title">
+                            <p>Graphic Desinger Intern - Hanoi</p>
+                            <p> 
+                              After graduating from university, I was accepted into the company’s talent program as a Graphic Designer Intern.
+                              I created animated web banner advertisements using Adobe Animate
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+
                     </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Labubu - 2024 </div>
                   </div>
                 </div>
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Genie.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Genie.jpg" alt="Genie-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/rnxKkgH.png" alt="Genie-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Wishes of the Genie <br> 2024</div>
+                <hr style="max-width: 50%;">
+
+                <div class="education">
+                  <div class="site-main-ct">
+                    <div class="site-main-text">
+                      <h2>Education</h2>
+                      <div class="exp-grid">
+
+                        <!-- Arena -->
+
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2016-2018</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                      
+                        <div class="grid-right">
+                          <div class="grid-right-company">
+                            <p>Arena Multimedia</p>
+                          </div>
+                          <div class="grid-right-title">
+                            <p>Hanoi</p>
+                          </div>
+                        </div>
+
+                        <!-- NEU -->
+                        <div class="grid-left">
+                          <div class="grid-left-year">
+                            <p>2012-2016</p>
+                          </div>
+                        </div>
+                        
+                        <div  class="grid-mid">
+                          <p>◉</p>
+                        </div>
+                        
+                        <div class="grid-right">
+                            <div class="grid-right-company">
+                              <p>National Economics University</p>
+                            </div>
+                            <div class="grid-right-title">
+                              <p>Bachelor's Degree - Hanoi</p>
+                            </div>
+                        </div>
+                        
+                        
+                      </div>
+
                     </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Wishes of the Genie - 2024 </div>
                   </div>
                 </div>
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/EmpressOfTheBlackSea.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Pirate.jpg" alt="EmpressOfTheBlackSeas-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/r0NHz4o.png" alt="EmpressOfTheBlackSeas-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Empress of the Black Sea <br> 2023</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Empress of the Black Sea - 2023 </div>
-                  </div>
-                </div>
+                <hr style="max-width: 50%;">
 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/TowerOfRiches.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/TowerOfRiches.jpg" alt="TowerOfRiches-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/onDpjB3.png" alt="SambaFiesta-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Tower of Riches <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Tower of Riches - 2024 </div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Cosmos.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/cosmos.jpg" alt="Cosmos-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/D6krSED.png" alt="Cosmos-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Cosmos Theme <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Cosmos Theme - 2024</div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/LegendoftheWhiteandGreenSnake.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/legendarySnake.jpg" alt="legendarySnake-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/onDpjB3.png" alt="SambaFiesta-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Legend of the White and Green Snake <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Legend of the White and Green Snake - 2024 </div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/newYear2025.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Countdown2025.jpg" alt="Countdown2025-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/kmggT0T.png" alt="Countdown2025-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Countdown <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Countdown - 2024 </div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Circus.html">
-                    <img class="cover_img slotGame"   src="./assets/SlotGame/circus.jpg" alt="AmazingCircus-CoverImage">
-                    <!-- <img class="cover_img slotGame"   src="https://i.imgur.com/AADINhJ.png" alt="AmazingCircus-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Amazing Circus <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Amazing Circus - 2022</div>
-                  </div>
-                </div>              
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Phoenix.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/SuperPhoenix.jpg" alt="SuperPhoenix-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/sWAG9TY.png" alt="SuperPhoenix-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Super Phoenix <br> 2023</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Super Phoenix - 2023 </div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Jurassic.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Dino.jpg" alt="Jurassic-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/kGox3ac.png" alt="Jurrasic-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Jurrasic Theme <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Jurrasic Theme - 2024 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/WildFishHunter.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/fishHunter.jpg" alt="WildFishHunter-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/6hpYpL2.png" alt="Cosmos-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Wild Fish Hunter <br> 2024</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Wild Fish Hunter - 2024 </div>
-                  </div>
-                </div>
-
-
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/SambaFiesta.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/SambaFiesta.jpg" alt="SambaFiesta-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/onDpjB3.png" alt="SambaFiesta-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Samba Fiesta <br> 2023</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Samba Fiesta - 2023 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Pandora.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/Pandora.jpg" alt="MysteriesOfPandora-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/sJPTVHx.png" alt="MysteriesOfPandora-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Mysteries of Pandora <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Mysteries of Pandora - 2022 </div>
-                  </div>
-                </div>
- 
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/ElToro.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/elToro.jpg" alt="LegendaryElToro-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/I60TAb2.png" alt="LegendaryElToro-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Legendary El Toro <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Legendary El Toro - 2022 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Mermaid.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/mermaid.jpg" alt="Mermaid'sTreasure-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/fWKDYoE.png" alt="Mermaid'sTreasure-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Mermaid's Treasure <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Mermaid's Treasure - 2022 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/GateOfKunlun.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/kunlun.jpg" alt="GatesOfKunlun-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/bvGuYOy.png" alt="GatesOfKunlun-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Gates of Kunlun <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Gates of Kunlun - 2022 </div>
-                  </div>
-                </div>
-
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/xMas2022.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/xMas2022.jpg" alt="SexyChristmasSirens-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/PG0onw6.png" alt="SexyChristmasSirens-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Sexy Christmas Sirens <br> 2022</div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Sexy Christmas Sirens - 2022 </div>
-                  </div>
-                </div>
-  
-                <div class="project-covers">
-                  <a class="project-cover" href="./public/Slot/Else.html">
-                    <img class="cover_img slotGame" src="./assets/SlotGame/else.jpg" alt="Else-CoverImage">
-                    <!-- <img class="cover_img slotGame" src="https://i.imgur.com/kuuGAci.png" alt="Else-CoverImage"> -->
-                    <div class="overlay">
-                      <div class="prjText">Everything Else </div>
-                    </div>
-                  </a>
-                  <div class="prjTitle">
-                    <div class="prjTitle-Text">Everything Else </div>
-                  </div>
-                </div>
-  
-  
-                
-              </div>
-            </div>
-  
+                <div class="contact">
+                  <div class="site-main-ct">
+                    <div class="site-main-text">
+                      <h2>Contact</h2>
+                      <div class="footer-contact">
+                        <div class="footer-contact-logo">
+                          <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="../assets/linkedin.png" alt="LinkedIn Logo"></a>
             
-          </section>
-  
+                          <a href="https://t.me/phucle177" target="_blank"><img src="../assets/telegram.png" alt="Telegram Logo" ></a>
+            
+            
+                          <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="../assets/instagram.png" alt="Instagram Logo"></a>
+            
+                        </div>
+                        <div class="footer-contact-mail">
+                          <p>lehongphuc177@gmail.com</p>
+                          <p>+84 366 42 77 05</p>
+                        </div>
+                      </div>
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+                
+    
+    
+            </section>
+            
+
+            
+        </main>
+        <footer>
           <section class="back-to-top">
             <a class="arrow-backToTop"  href="#">
               <span class="arrow">↑</span>
@@ -629,38 +405,13 @@
             </a>
   
           </section>
-        </div> 
- 
-      </main>
-
-      <footer>
-        <div class="footer-container">
-          <div class="footer-contact">
-            <div class="footer-contact-logo">
-              <a href="https://www.linkedin.com/in/phucle177/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn Logo"></a>
-
-              <a href="https://t.me/phucle177" target="_blank"><img src="./assets/telegram.png" alt="Telegram Logo" ></a>
-
-              <a href="https://www.instagram.com/phuuuc_leee/" target="_blank"><img src="./assets/instagram.png" alt="Instagram Logo"></a>
-
-            </div>
-            <div class="footer-contact-mail">
-              <p>lehongphuc177@gmail.com</p>
-              <p>+84 366 42 77 05</p>
-            </div>
-          </div>
-          <div class="text-bottom">
-            <p>Several assets that appeared in some of my projects were made by AI, and some were made by my colleagues since we worked as a team on each project.
-              Please scroll down to see my notes of which parts belong to my colleagues or are generated by A.I. Thank you.</p>
-          </div>
-      </footer>
-
+        </footer>
     </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./portfolio_main.js" charset="utf-8"></script>
 
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./CV.js" charset="utf-8"></script>
+
+</body>
 </html>
-
