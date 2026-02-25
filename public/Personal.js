@@ -21,6 +21,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+//PASSWORD BROWSER
+
+// (function () {
+//   const PASSWORD = "phelac177";
+//   const KEY = "unlock_ok";
+
+  
+//   if (sessionStorage.getItem(KEY) === "1") return;
+
+//   const pass = prompt("Enter password");
+//   if (pass === PASSWORD) {
+//     sessionStorage.setItem(KEY, "1");
+//   } else {
+//     document.documentElement.innerHTML = "";
+//     alert("Wrong password.");
+//     location.replace("/");
+//   }
+// })();
+
+
 // NAVBAR
 
 $(".cv-title a").mouseover(function(){
