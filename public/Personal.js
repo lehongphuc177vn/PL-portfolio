@@ -1,25 +1,62 @@
 // alert("hi");
 
-// PASSWORD
+// PASSWORD (SOURCE PAGE)
 
 document.addEventListener("DOMContentLoaded", function () {
-
   const PASSWORD = "phelac177";
+  const KEY = "unlock_until";              // lưu epoch ms
+  const TTL_MS = 1 * 60 * 1000;            // 5 phút
 
-  document.querySelectorAll(".locked").forEach(link => {
-    link.addEventListener("click", function(e) {
+  function isUnlocked() {
+    const until = Number(localStorage.getItem(KEY) || 0);
+    return Date.now() < until;
+  }
+
+  function setUnlocked() {
+    localStorage.setItem(KEY, String(Date.now() + TTL_MS));
+  }
+
+  document.querySelectorAll("a.locked").forEach(a => {
+    a.addEventListener("click", function (e) {
       e.preventDefault();
+
+      if (isUnlocked()) {
+        window.location.href = this.href;
+        return;
+      }
 
       const pass = prompt("Enter password");
       if (pass === PASSWORD) {
+        setUnlocked();                     // set unlock trước khi chuyển trang
         window.location.href = this.href;
       } else {
         alert("Wrong password. Please try again.");
       }
     });
   });
-
 });
+
+
+// PASSWORD
+
+// document.addEventListener("DOMContentLoaded", function () {
+
+//   const PASSWORD = "phelac177";
+
+//   document.querySelectorAll(".locked").forEach(link => {
+//     link.addEventListener("click", function(e) {
+//       e.preventDefault();
+
+//       const pass = prompt("Enter password");
+//       if (pass === PASSWORD) {
+//         window.location.href = this.href;
+//       } else {
+//         alert("Wrong password. Please try again.");
+//       }
+//     });
+//   });
+
+// });
 
 
 //PASSWORD BROWSER
