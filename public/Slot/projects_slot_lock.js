@@ -1,9 +1,8 @@
-// PASSWORD (SOURCE PAGE)
-
-document.addEventListener("DOMContentLoaded", function () {
+// PASSWORD (DESTINATION PAGE) - localStorage + TTL 5 minutes
+(function () {
   const PASSWORD = "phelac177";
-  const KEY = "unlock_until";              // lưu epoch ms
-  const TTL_MS = 1 * 60 * 1000;            // 5 phút
+  const KEY = "unlock_until";
+  const TTL_MS = 1 * 60 * 1000;
 
   function isUnlocked() {
     const until = Number(localStorage.getItem(KEY) || 0);
@@ -14,27 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem(KEY, String(Date.now() + TTL_MS));
   }
 
-  document.querySelectorAll("a.locked").forEach(a => {
-    a.addEventListener("click", function (e) {
-      e.preventDefault();
+  if (isUnlocked()) return;
 
-      if (isUnlocked()) {
-        window.location.href = this.href;
-        return;
-      }
+  const pass = prompt("Enter password");
+  if (pass === PASSWORD) {
+    setUnlocked();
+  } else {
+    document.documentElement.innerHTML = "";
+    alert("Wrong password.");
+    location.replace("/");
+  }
+})();
 
-      const pass = prompt("Enter password");
-      if (pass === PASSWORD) {
-        setUnlocked();                     // set unlock trước khi chuyển trang
-        window.location.href = this.href;
-      } else {
-        alert("Wrong password. Please try again.");
-      }
-    });
-  });
-});
-
-// //PASSWORD BROWSER
+// PASSWORD BROWSER
 // (function () {
 //   const PASSWORD = "phelac177";
 //   const KEY = "unlock_ok";
