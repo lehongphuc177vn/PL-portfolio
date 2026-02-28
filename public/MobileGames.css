@@ -239,16 +239,16 @@ font-weight: 500;
 
 
 .sideBar-mainContent{
-display:block;
-max-width: 100%;
-}
+    display:flex;
+    width: 100%;
+  }
 
 .sideBar{
   padding-right: 20px;
-  display: flex;
+  
   flex-direction: column;
-  max-width: 17%;
-  float:left;
+  width: 17%;
+  
 }
 
 .active-sideBar{
@@ -306,9 +306,9 @@ font-weight: 300;
 
 
 .mainContent{
-display: inline-block;
-max-width: 83%;
-float: right;
+  
+  width: 83%;
+  
 }
 
 .project-covers-container{
@@ -562,9 +562,10 @@ text-align: center;
   .sideBar{
     display: none;
   }
+
   .mainContent{
-    display: block;
-    max-width: 100%;
+    
+    width: 100%;
   }
 
 
@@ -640,12 +641,17 @@ text-align: center;
     grid-template-columns: 50% 50% ;
   }
 
+  .sideBar-mainContent{
+    display:flex;
+    width: 100%;
+  } 
+
   .sideBar{
     display: none;
   }
+
   .mainContent{
-    display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
 
@@ -721,11 +727,17 @@ text-align: center;
     display:none;
   }
 
-  .mainContent{
-    display: block;
-    max-width: 100%;
+
+
+  .sideBar-mainContent{
+    display:flex;
+    width: 100%;
   }
 
+  .mainContent{
+    display: block;
+    width: 100%;
+  }
 
   .sideBar{
     display: none;
