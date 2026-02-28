@@ -2,7 +2,7 @@
 (function () {
   const PASSWORD = "phelac177";
   const KEY = "unlock_until";
-  const TTL_MS = 1 * 60 * 1000;
+  const TTL_MS = 5 * 60 * 1000;
 
   function isUnlocked() {
     const until = Number(localStorage.getItem(KEY) || 0);

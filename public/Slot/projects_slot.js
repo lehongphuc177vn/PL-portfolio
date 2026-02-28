@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const PASSWORD = "phelac177";
   const KEY = "unlock_until";              // lưu epoch ms
-  const TTL_MS = 1 * 60 * 1000;            // 5 phút
+  const TTL_MS = 5 * 60 * 1000;            // 5 phút
 
   function isUnlocked() {
     const until = Number(localStorage.getItem(KEY) || 0);
