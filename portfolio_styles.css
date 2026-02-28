@@ -239,16 +239,16 @@ section{
 
 
 .sideBar-mainContent{
-  display:block;
+  display:flex;
   max-width: 100%;
 }
 
 .sideBar{
   padding-right: 20px;
-  display: flex;
+  
   flex-direction: column;
-  max-width: 17%;
-  float:left;
+  width: 17%;
+  
 }
 
 .active-sideBar{
@@ -306,9 +306,9 @@ section{
 
 
 .mainContent{
-  display: inline-block;
-  max-width: 83%;
-  float: right;
+  
+  width: 83%;
+  
 }
 
 .project-covers-container{
@@ -572,8 +572,8 @@ footer{
 
 
   .mainContent{
-    display: block;
-    max-width: 100%;
+    
+    width: 100%;
   }
 
 
@@ -649,12 +649,16 @@ footer{
     grid-template-columns: 50% 50% ;
   }
 
+  .sideBar-mainContent{
+    display:flex;
+    width: 100%;
+  }
+
   .sideBar{
     display: none;
   }
   .mainContent{
-    display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
 
@@ -730,14 +734,17 @@ footer{
     display:none;
   }
 
+  .sideBar-mainContent{
+    display:flex;
+    width: 100%;
+  }
 
   .mainContent{
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
-
-.sideBar{
+  .sideBar{
     display: none;
   }
 
