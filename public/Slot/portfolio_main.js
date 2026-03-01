@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  const PASSWORD = "phelac177";
+  const PASSWORD = "phle177";
 
   document.querySelectorAll(".locked").forEach(link => {
     link.addEventListener("click", function(e) {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //PASSWORD BROWSER
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const PASSWORD = "phelac177";
+  const PASSWORD = "phle177";
   const ok = sessionStorage.getItem("unlock_ok") === "1";
 
   if (!ok) {

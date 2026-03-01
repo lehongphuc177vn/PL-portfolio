@@ -1,6 +1,6 @@
 // PASSWORD (DESTINATION PAGE) - localStorage + TTL 5 minutes
 (function () {
-  const PASSWORD = "phelac177";
+  const PASSWORD = "phle177";
   const KEY = "unlock_until";
   const TTL_MS = 5 * 60 * 1000;
 
@@ -27,7 +27,7 @@
 
 // PASSWORD BROWSER
 // (function () {
-//   const PASSWORD = "phelac177";
+//   const PASSWORD = "phle177";
 //   const KEY = "unlock_ok";
 
   
@@ -47,7 +47,7 @@
 
 // document.addEventListener("DOMContentLoaded", function () {
 
-//   const PASSWORD = "phelac177";
+//   const PASSWORD = "phle177";
 
 //   document.querySelectorAll(".locked").forEach(link => {
 //     link.addEventListener("click", function(e) {
